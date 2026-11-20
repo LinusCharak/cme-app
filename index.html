@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/cme-app/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Video CME">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>Video CME</title>
-  <link rel="manifest" href="manifest.json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Video CME – please use the app</title>
+<style>
+  :root { --bg:#f4f7f4; --card:#ffffff; --ink:#1b2a1f; --muted:#5a6b5f; --green:#14532D; --line:#dfe7e0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1712; --card:#16211a; --ink:#e7f0e9; --muted:#a5b8aa; --green:#5fcf8f; --line:#253529; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:var(--bg); color:var(--ink); font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; padding:24px 16px; }
+  .card { width:100%; max-width:440px; background:var(--card); border:1px solid var(--line); border-radius:18px;
+          padding:28px 22px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,.06); }
+  h1 { font-size:24px; line-height:1.25; margin:6px 0 10px; color:var(--green); }
+  p { margin:0 0 14px; color:var(--muted); }
+  .btn { display:inline-block; margin:8px 0 18px; padding:14px 22px; border-radius:12px; background:var(--green);
+         color:#fff; font-weight:700; font-size:17px; text-decoration:none; }
+  @media (prefers-color-scheme: dark) { .btn { color:#06200f; } }
+  ol { text-align:left; margin:0 auto 6px; padding-left:22px; max-width:340px; color:var(--ink); }
+  li { margin:6px 0; }
+  small { display:block; margin-top:16px; color:var(--muted); }
+  .mark { font-size:44px; line-height:1; }
+</style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
-
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-  <script src="flutter_bootstrap.js" async></script>
+<main class="card">
+  <div class="mark" aria-hidden="true">📲</div>
+  <h1>Video CME is now available only in the app</h1>
+  <p>The web version has been closed. Please install the <b>Video CME</b> app from Google Play to continue your CME sessions.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.charakpharma.livomyn">Get it on Google Play</a>
+  <ol>
+    <li>Tap <b>Get it on Google Play</b> and then <b>Install</b>.</li>
+    <li>Open <b>Video CME</b> and log in with your <b>same username and password</b>.</li>
+    <li>The session video downloads once. After that it plays without using data.</li>
+  </ol>
+  <small>Charak Pharma Pvt Ltd · For help, contact your ASM or RSM.</small>
+</main>
 </body>
 </html>
